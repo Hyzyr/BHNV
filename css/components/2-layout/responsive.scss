@@ -36,6 +36,7 @@
     padding: 0 15px;
   }
   @include typography-768;
+  @include footer-768;
   @include header-768;
   @include index-768;
 }
@@ -47,5 +48,6 @@
   @include index-580;
 }
 @media (max-width: 460px) {
+  @include footer-460;
   @include index-460;
 }

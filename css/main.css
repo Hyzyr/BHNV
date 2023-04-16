@@ -446,6 +446,8 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 10em;
+  height: 3em;
 }
 .logo img {
   width: 100%;
@@ -509,7 +511,7 @@ li {
   width: 320px;
 }
 .footer__inner-info .logo {
-  width: 180px;
+  font-size: 18px;
 }
 .footer__inner-info-list {
   display: -webkit-box;
@@ -1556,6 +1558,11 @@ li {
   line-height: 1.2;
   text-transform: capitalize;
 }
+.projects__item-button svg {
+  width: 2.5em;
+  padding-top: 0.6em;
+  height: auto;
+}
 .projects__item-badge {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2035,6 +2042,9 @@ li {
   h5 {
     font-size: 18px;
   }
+  .footer {
+    padding: 60px 0;
+  }
   .footer__inner {
     gap: 30px;
     -webkit-box-orient: vertical;
@@ -2044,10 +2054,20 @@ li {
     max-width: 600px;
     margin: 0 auto;
   }
+  .footer__inner-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .footer__inner-info-list {
+    margin: 0;
+  }
   .footer__inner-mailing {
     width: 100%;
-    border-top: 1px solid rgba(166, 185, 229, 0.4);
-    padding-top: 30px;
   }
   .footer__inner-links {
     width: 100%;
@@ -2055,7 +2075,6 @@ li {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    border-top: 1px solid rgba(166, 185, 229, 0.4);
     padding-top: 30px;
   }
   .footer__inner-form {
@@ -2069,6 +2088,8 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 30px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
   }
   .hero {
     padding: 200px 0 160px 0;
@@ -2103,6 +2124,25 @@ li {
     padding-bottom: unset;
     height: 600px;
   }
+  .projects__item-button {
+    opacity: 1;
+    color: #fff;
+    font-size: 16px;
+    width: unset;
+    height: unset;
+    background: #a6b9e5;
+  }
+  .projects__item-button svg {
+    padding: 0;
+    width: 1.5em;
+  }
+  .projects__item-badge {
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    font-size: 14px;
+  }
   .projects__inner-tab {
     font-size: 18px;
   }
@@ -2129,6 +2169,18 @@ li {
   }
   p.xlg {
     font-size: 18px;
+  }
+  .footer__inner-info .logo {
+    font-size: 16px;
+  }
+  .footer__inner-info-list {
+    gap: 8px;
+  }
+  .footer__inner-info-list li {
+    font-size: 16px;
+  }
+  .footer__inner-links a {
+    font-size: 16px;
   }
   .header__inner .logo {
     font-size: 13px;
@@ -2202,9 +2254,9 @@ li {
   }
   .projects__inner-tabs {
     gap: 10px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .projects__inner-tab {
     font-size: 16px;
@@ -2220,11 +2272,72 @@ li {
   }
 }
 @media (max-width: 460px) {
-  .projects__inner-tab {
+  .footer__inner-info .logo {
     font-size: 14px;
+  }
+  .footer__inner-info-list {
+    gap: 5px;
+  }
+  .footer__inner-info-list li {
+    font-size: 15px;
+  }
+  .footer__inner-links a {
+    font-size: 14px;
+  }
+  .footer__inner-form {
+    padding: 30px 15px;
+  }
+  .footer__inner-form-group label {
+    font-size: 14px;
+  }
+  .footer__inner .input {
+    font-size: 16px;
+  }
+  .footer__inner .button {
+    font-size: 16px;
   }
   .contact__inner-list {
     gap: 12px;
     font-size: 16px;
+  }
+  .construction__inner-info-arrows {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 6px !important;
+  }
+  .electrical__inner-slider-arrows {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 25px;
+    font-size: 6px !important;
+  }
+  .feedbacks__item {
+    padding: 10px;
+  }
+  .feedbacks__item-user {
+    font-size: 15px;
+  }
+  .feedbacks__inner-arrows {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 6px !important;
+    margin-top: 20px;
+  }
+  .projects__inner-tab {
+    font-size: 14px;
+  }
+  .projects__inner-arrows {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 6px !important;
+    margin-top: 20px;
   }
 }

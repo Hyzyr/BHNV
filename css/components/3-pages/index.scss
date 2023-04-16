@@ -615,6 +615,12 @@
       font-size: 24px;
       line-height: 1.2;
       text-transform: capitalize;
+
+      svg {
+        width: 2.5em;
+        padding-top: 0.6em;
+        height: auto;
+      }
     }
     &-badge {
       display: flex;
@@ -979,6 +985,26 @@
       }
     }
     &__item {
+      &-button {
+        opacity: 1;
+        color: $white;
+        font-size: 16px;
+        width: unset;
+        height: unset;
+        background: $secondary-light;
+
+        svg {
+          padding: 0;
+          width: 1.5em;
+        }
+      }
+      &-badge {
+        top: 0;
+        left: 0;
+        bottom: unset;
+        right: unset;
+        font-size: 14px;
+      }
     }
   }
   .projects {
@@ -1082,7 +1108,7 @@
     &__inner {
       &-tabs {
         gap: 10px;
-        justify-content: flex-start;
+        justify-content: space-between;
       }
       &-tab {
         font-size: 16px;
@@ -1106,18 +1132,63 @@
   }
 }
 @mixin index-460 {
-  .projects {
-    &__inner {
-      &-tab {
-        font-size: 14px;
-      }
-    }
-  }
   .contact {
     &__inner {
       &-list {
         gap: 12px;
         font-size: 16px;
+      }
+    }
+  }
+  .construction {
+    &__inner {
+      &-info {
+        &-arrows {
+          width: 100%;
+          justify-content: space-between;
+          font-size: 6px !important;
+        }
+      }
+    }
+  }
+  .electrical {
+    &__inner {
+      &-slider {
+        &-arrows {
+          width: 100%;
+          justify-content: space-between;
+          margin-top: 25px;
+          font-size: 6px !important;
+        }
+      }
+    }
+  }
+  .feedbacks {
+    &__item {
+      padding: 10px;
+      &-user {
+        font-size: 15px;
+      }
+    }
+    &__inner {
+      &-arrows {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 6px !important;
+        margin-top: 20px;
+      }
+    }
+  }
+  .projects {
+    &__inner {
+      &-tab {
+        font-size: 14px;
+      }
+      &-arrows {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 6px !important;
+        margin-top: 20px;
       }
     }
   }

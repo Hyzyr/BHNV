@@ -13,7 +13,7 @@
       width: 320px;
 
       .logo {
-        width: 180px;
+        font-size: 18px;
       }
       &-list {
         display: flex;
@@ -173,22 +173,29 @@
 }
 @mixin footer-940 {
   .footer {
+    padding: 60px 0;
+
     &__inner {
       gap: 30px;
       flex-direction: column;
       max-width: 600px;
       margin: 0 auto;
+      &-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
 
+        &-list {
+          margin: 0;
+        }
+      }
       &-mailing {
         width: 100%;
-        border-top: 1px solid rgba($secondary-light, 0.4);
-        padding-top: 30px;
       }
       &-links {
         width: 100%;
         max-width: unset;
         order: 1;
-        border-top: 1px solid rgba($secondary-light, 0.4);
         padding-top: 30px;
       }
       &-form {
@@ -197,6 +204,70 @@
         padding-top: 30px;
         flex-direction: column;
         gap: 30px;
+        padding: 30px;
+        background: rgba($white, 0.1);
+      }
+    }
+  }
+}
+
+@mixin footer-768 {
+  .footer {
+    &__inner {
+      &-info {
+        .logo {
+          font-size: 16px;
+        }
+        &-list {
+          gap: 8px;
+
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+      &-links {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer-460 {
+  .footer {
+    &__inner {
+      &-info {
+        .logo {
+          font-size: 14px;
+        }
+        &-list {
+          gap: 5px;
+          li {
+            font-size: 15px;
+          }
+        }
+      }
+      &-links {
+        a {
+          font-size: 14px;
+        }
+      }
+      &-form {
+        padding: 30px 15px;
+
+        &-group {
+          label {
+            font-size: 14px;
+          }
+        }
+      }
+      .input {
+        font-size: 16px;
+      }
+      .button {
+        font-size: 16px;
       }
     }
   }
