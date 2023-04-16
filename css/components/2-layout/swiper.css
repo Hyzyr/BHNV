@@ -1,0 +1,11 @@
+.swiper-arrow {
+  width: 60px;
+  height: auto;
+}
+.swiper-arrow svg {
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  background: red;
+  opacity: 1;
+}

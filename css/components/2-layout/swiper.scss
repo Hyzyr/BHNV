@@ -1,0 +1,32 @@
+.swiper {
+  &-arrow {
+    font-size: inherit;
+    width: 6em;
+    height: auto;
+    svg {
+      width: 100%;
+    }
+  }
+  &-pagination {
+    &-bullet {
+      background: $secondary-light !important;
+      opacity: 1 !important;
+      transition: 0.2s ease-out;
+      width: 1em !important;
+      height: 1em !important;
+      &-active {
+        background: $secondary !important;
+      }
+    }
+  }
+  &-dots {
+    display: flex;
+    width: unset !important;
+    justify-content: space-evenly;
+    min-width: 140px;
+    transform: translateY(-40%);
+    font-size: inherit;
+    gap: 2em;
+    padding: 0 1em;
+  }
+}
