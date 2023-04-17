@@ -1,6 +1,6 @@
 /// section footer
 .footer {
-  padding: 80px 0 20px 0;
+  padding: 80px 0 30px 0;
   background: $black-secondary;
 
   &__inner {
@@ -205,7 +205,7 @@
 }
 @mixin footer-940 {
   .footer {
-    padding: 60px 0 20px 0;
+    padding: 60px 0 30px 0;
 
     &__inner {
       gap: 30px;
