@@ -65,11 +65,4 @@ document.querySelectorAll(`[data-toggle]`).forEach((toggleBtn) => {
   toggleBtn.onclick = () =>
     toggleBtn.classList.toggle(toggleBtn.getAttribute("data-toggle"));
 });
-///
-///
-///
-///WOW JS
-if (window?.WOW)
-  new WOW().init({
-    boxClass: "wow",
-  });
+

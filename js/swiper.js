@@ -1,4 +1,4 @@
-const settings = {
+const swiperSettings = {
   construction: {
     loop: false,
     slidesPerView: 1.2,
@@ -54,6 +54,10 @@ const settings = {
     watchOverflow: true,
     slidesPerView: 1.2,
     spaceBetween: 5,
+    initialSlide: 0,
+    loop: true,
+    loopedSlides: 3,
+    visibilityFullFit: true,
     breakpoints: {
       480: {
         slidesPerView: 1.5,
@@ -117,7 +121,7 @@ const settings = {
   },
 };
 
-document.querySelectorAll(".swiper").forEach((swiperSlider) => {
+const initSwiper = (swiperSlider) => {
   const settingsKey = swiperSlider.getAttribute("data-swiper");
   const parentElement = swiperSlider.hasAttribute("data-swiper-parent")
     ? document.querySelector(swiperSlider.getAttribute("data-swiper-parent"))
@@ -126,10 +130,8 @@ document.querySelectorAll(".swiper").forEach((swiperSlider) => {
   const next = parentElement.querySelector(".swiper-arrow-next");
   const dots = parentElement.querySelector(".swiper-dots");
 
-  console.log("parentElement");
-  console.log(parentElement);
   new Swiper(swiperSlider, {
-    ...settings[settingsKey],
+    ...swiperSettings[settingsKey],
     // // If we need pagination
     // pagination: {
     //   el: ".swiper-pagination",
@@ -151,12 +153,6 @@ document.querySelectorAll(".swiper").forEach((swiperSlider) => {
         }
       : {},
   });
-});
+};
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  grid: {
-    rows: 2,
-  },
-  spaceBetween: 30,
-});
+document.querySelectorAll(".swiper").forEach(initSwiper);

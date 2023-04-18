@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="images/logo-main.svg" />
+    <link rel="icon" href="images/logo-small.png" />
     <title>Logo | Home</title>
     <link
       rel="stylesheet"
@@ -37,7 +37,7 @@
               </div>
             </div>
             <span class="logo">
-              <img src="images/logo-main.svg" alt="Logo" />
+              <img src="images/logo-main.png" alt="Logo" />
             </span>
             <button class="burger" id="menuBtn"></button>
           </div>
@@ -52,7 +52,14 @@
             <div class="hero__bg-fog" style="opacity: 0.8"></div>
           </div>
           <div class="hero__inner">
-            <h1>We solve problems of any complexity</h1>
+            <div class="logo">
+              <img src="images/logo-bigger.png" alt="" />
+            </div>
+            <h1>
+              We solve problems of
+              <br />
+              any complexity
+            </h1>
             <p class="xlg">
               Our task is to accompany each client at every stage of the design,
               selection and design process. We will be able to provide you with
@@ -618,20 +625,45 @@
           <div class="projects__inner">
             <h3>Our projects</h3>
             <ul class="projects__inner-tabs">
-              <i class="projects__inner-tab active">All</i>
-              <i class="projects__inner-tab">Construction</i>
-              <i class="projects__inner-tab">Electrical</i>
-              <i class="projects__inner-tab">Vehicle charger</i>
+              <li
+                class="projects__inner-tab active"
+                data-event="filter"
+                data-filter="all"
+              >
+                All
+              </li>
+              <li
+                class="projects__inner-tab"
+                data-event="filter"
+                data-filter="construction"
+              >
+                Construction
+              </li>
+              <li
+                class="projects__inner-tab"
+                data-event="filter"
+                data-filter="electrical"
+              >
+                Electrical
+              </li>
+              <li
+                class="projects__inner-tab"
+                data-event="filter"
+                data-filter="vehicleCharger"
+              >
+                Vehicle charger
+              </li>
             </ul>
             <div class="projects__inner-slider">
               <div
                 class="swiper"
+                id="projectsSwiper"
                 data-swiper="projects"
                 data-swiper-parent="#projectsSection"
               >
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -653,7 +685,29 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _electrical">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Electrical work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -675,7 +729,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -697,7 +751,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -719,7 +773,29 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _vehicleCharger">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Vehicle Charger</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -741,7 +817,29 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _electrical">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Electrical work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -763,7 +861,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -785,7 +883,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -807,7 +905,29 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _vehicleCharger">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Vehicle Charger</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -829,7 +949,29 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _electrical">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Electrical work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -851,7 +993,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -873,7 +1015,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="projects__item">
+                    <div class="projects__item _construction">
                       <img src="images/placeholder.png" alt="" />
                       <a href="#" class="projects__item-button">
                         <span>See more</span>
@@ -892,6 +1034,248 @@
                         </svg>
                       </a>
                       <div class="projects__item-badge">Construction work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _vehicleCharger">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Vehicle Charger</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Construction work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _electrical">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Electrical work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Construction work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Construction work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _construction">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Construction work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _vehicleCharger">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Vehicle Charger</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _electrical">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Electrical work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _vehicleCharger">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Vehicle Charger</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _electrical">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Electrical work</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="projects__item _vehicleCharger">
+                      <img src="images/placeholder.png" alt="" />
+                      <a href="#" class="projects__item-button">
+                        <span>See more</span>
+                        <svg
+                          width="45"
+                          height="18"
+                          viewBox="0 0 45 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.000175834 1.2132H42.4266L26.4636 16.9632"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </a>
+                      <div class="projects__item-badge">Vehicle Charger</div>
                     </div>
                   </div>
                 </div>
@@ -961,7 +1345,7 @@
           <div class="footer__inner">
             <div class="footer__inner-info">
               <div class="logo">
-                <img src="images/logo-main.svg" alt="logo" />
+                <img src="images/logo-main.png" alt="logo" />
               </div>
               <ul class="footer__inner-info-list">
                 <li>
@@ -988,30 +1372,26 @@
                 <a href="#">Reviews</a>
               </div>
             </div>
-            <div class="footer__inner-mailing">
-              <h4>Sign Up to Our Mailing List</h4>
-              <div class="input input--underline">
-                <input type="text" placeholder="E-mail" />
-              </div>
-              <button class="button button--primary">Get a quote</button>
-            </div>
             <div class="footer__inner-form">
               <h4>Sign Up to Our Mailing List</h4>
-              <div class="footer__inner-form-group">
-                <label for="first-name">First name</label>
-                <div class="input input--underline">
-                  <input type="text" id="first-name" placeholder="First name" />
+              <form action="#">
+                <div class="footer__inner-form-column">
+                  <div class="input input--underline">
+                    <input type="text" placeholder="Your Name" />
+                  </div>
+                  <div class="input input--underline">
+                    <input type="text" placeholder="Your Phone" />
+                  </div>
+                  <div class="input input--underline">
+                    <input type="text" placeholder="Your Email" />
+                  </div>
+                  <div class="footer__inner-form-group _bottom">
+                    <button type="submit" class="button button--primary">
+                      Get a quote
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div class="footer__inner-form-group">
-                <label for="e-mai">E-mai:</label>
-                <div class="input input--underline">
-                  <input type="text" id="e-mai" placeholder="E-mai:" />
-                </div>
-              </div>
-              <div class="footer__inner-form-group _bottom">
-                <button class="button button--primary">Get a quote</button>
-              </div>
+              </form>
             </div>
           </div>
           <div class="footer__copyright">
@@ -1036,7 +1416,8 @@
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/projects-filter.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
