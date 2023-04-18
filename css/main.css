@@ -2422,3 +2422,8 @@ li {
     margin-top: 20px;
   }
 }
+@media (max-width: 370px) {
+  .footer__copyright {
+    font-size: 10px;
+  }
+}

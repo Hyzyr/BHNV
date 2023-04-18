@@ -52,3 +52,6 @@
   @include footer-460;
   @include index-460;
 }
+@media (max-width: 370px) {
+  @include footer-370;
+}
