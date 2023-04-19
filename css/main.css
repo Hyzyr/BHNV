@@ -2286,6 +2286,9 @@ li {
   .header__inner .burger {
     font-size: 8px;
   }
+  .hero {
+    margin-bottom: 20px;
+  }
   .hero__inner {
     width: 100%;
     max-width: 540px;
@@ -2411,6 +2414,9 @@ li {
     font-size: 11px;
     margin-top: 70px;
   }
+  .hero {
+    margin-bottom: 0;
+  }
   .hero__inner .logo {
     font-size: 22px;
   }
@@ -2463,6 +2469,9 @@ li {
             justify-content: space-between;
     font-size: 6px !important;
     margin-top: 20px;
+  }
+  .projects__inner-arrows .swiper-dots {
+    gap: 0.4em;
   }
 }
 @media (max-width: 370px) {

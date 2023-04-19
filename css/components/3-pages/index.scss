@@ -1065,6 +1065,7 @@
 }
 @mixin index-768 {
   .hero {
+    margin-bottom: 20px;
     &__inner {
       width: 100%;
       max-width: 540px;
@@ -1182,6 +1183,7 @@
 }
 @mixin index-460 {
   .hero {
+    margin-bottom: 0;
     &__inner {
       .logo {
         font-size: 22px;
@@ -1251,6 +1253,10 @@
         justify-content: space-between;
         font-size: 6px !important;
         margin-top: 20px;
+
+        .swiper-dots {
+          gap: 0.4em;
+        }
       }
     }
   }
