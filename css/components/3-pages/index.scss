@@ -1,7 +1,7 @@
 //section hero
 .hero {
   position: relative;
-  padding: 300px 0 260px 0;
+  padding: 200px 0 160px 0;
   margin-bottom: 50px;
 
   &__bg {
@@ -33,9 +33,11 @@
   &__inner {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
     color: $white;
     max-width: 700px;
+    min-height: calc(95vh - 360px);
     width: 63%;
 
     .logo {
@@ -722,10 +724,16 @@
   }
 }
 
-@mixin index-1280 {
+@mixin index-1390 {
   .hero {
-    padding: 300px 0 200px 0;
+    padding: 170px 0 100px 0;
+    &__inner {
+      min-height: calc(95vh - 270px);
+      gap: 25px;
+    }
   }
+}
+@mixin index-1280 {
   .about {
     &__inner {
       align-items: flex-end;
@@ -763,7 +771,6 @@
 
 @mixin index-1160 {
   .hero {
-    padding: 260px 0 200px 0;
     &__inner {
       .logo {
         font-size: 40px;
@@ -886,7 +893,10 @@
 }
 @mixin index-1025 {
   .hero {
-    padding: 220px 0 180px 0;
+    padding: 100px 0 120px 0;
+    &__inner {
+      min-height: calc(95vh - 220px);
+    }
   }
   .about {
     &__inner {
@@ -967,8 +977,12 @@
 }
 @mixin index-940 {
   .hero {
-    padding: 200px 0 160px 0;
+    padding: 90px 0 100px 0;
+
     &__inner {
+      justify-content: flex-end;
+      min-height: calc(65vh - 190px);
+
       .logo {
         font-size: 36px;
       }
@@ -1056,7 +1070,6 @@
       max-width: 540px;
     }
   }
-
   /// section constriction
   .construction {
     &__inner {
@@ -1114,7 +1127,10 @@
 }
 @mixin index-580 {
   .hero {
+    padding: 90px 0 60px 0;
     &__inner {
+      min-height: calc(85vh - 150px);
+      justify-content: center;
       .logo {
         font-size: 32px;
       }
@@ -1168,7 +1184,13 @@
   .hero {
     &__inner {
       .logo {
-        font-size: 26px;
+        font-size: 22px;
+      }
+      h1 {
+        font-size: 32px;
+        br {
+          display: none;
+        }
       }
     }
   }

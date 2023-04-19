@@ -1,7 +1,11 @@
 @media (max-width: 1390px) {
   @include header-1390;
+  @include index-1390;
 }
 @media (max-width: 1280px) {
+  .anchor {
+    top: -80px;
+  }
   @include typography-1280;
   @include header-1280;
   @include footer-1280;
@@ -18,6 +22,9 @@
 @media (max-width: 1025px) {
   .autoContainer {
     padding: 0 30px;
+  }
+  .anchor {
+    top: -60px;
   }
   @include typography-1025;
   @include header-1025;
@@ -36,6 +43,7 @@
   .autoContainer {
     padding: 0 15px;
   }
+
   @include typography-768;
   @include footer-768;
   @include header-768;
