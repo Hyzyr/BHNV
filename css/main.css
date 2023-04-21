@@ -216,6 +216,7 @@ input::-webkit-inner-spin-button {
 }
 
 body {
+  cursor: default;
   font-family: "Raleway", sans-serif, sans-serif;
   font-size: 14px;
   color: #101010;
@@ -1333,6 +1334,7 @@ li {
   font-size: 20px;
 }
 .charger__tab-header {
+  cursor: pointer;
   position: relative;
   border-bottom: 1px solid #a6b9e5;
   padding: 1em 6.5em 1em 0.5em;
@@ -1374,11 +1376,16 @@ li {
   border-bottom: 1px solid transparent;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
+  scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
   color: #101010;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.3;
+}
+.charger__tab-text::-webkit-scrollbar { /** WebKit */
+  display: none;
 }
 .charger__tab.active .charger__tab-header {
   background: #ff8a00;
@@ -1549,6 +1556,9 @@ li {
           align-items: flex-start;
   margin-top: 35px;
   font-size: 10px;
+}
+.projects__inner-arrows .swiper-pagination-bullet {
+  pointer-events: none;
 }
 .projects__item {
   cursor: pointer;

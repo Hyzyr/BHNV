@@ -398,6 +398,7 @@
     font-size: 20px;
 
     &-header {
+      cursor: pointer;
       position: relative;
       border-bottom: 1px solid $secondary-light;
       padding: 1em 6.5em 1em 0.5em;
@@ -435,6 +436,7 @@
       overflow: hidden;
       border-bottom: 1px solid transparent;
       transition: 0.2s ease-out;
+      @include hideScroll;
 
       //font
       color: $black;
@@ -592,6 +594,10 @@
       align-items: flex-start;
       margin-top: 35px;
       font-size: 10px;
+
+      .swiper-pagination-bullet {
+        pointer-events: none;
+      }
     }
   }
   &__item {
