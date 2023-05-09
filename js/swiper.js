@@ -26,23 +26,11 @@ const swiperSettings = {
   },
   electrical: {
     loop: false,
-    slidesPerView: 1.2,
-    spaceBetween: 5,
+    slidesPerView: 1,
+    spaceBetween: 3,
     breakpoints: {
-      460: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 2.5,
-        spaceBetween: 10,
-      },
-      840: {
-        slidesPerView: 3,
-        spaceBetween: 5,
-      },
       1160: {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 10,
       },
     },
