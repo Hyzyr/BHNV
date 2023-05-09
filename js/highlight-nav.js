@@ -15,9 +15,10 @@ function navHighlighter() {
         .querySelector(".nav a[href*=" + sectionId + "]")
         .classList.add("active");
     } else {
-      document
-        .querySelector(".nav a[href*=" + sectionId + "]")
-        .classList.remove("active");
+      let nav = document.querySelector(".nav a[href*=" + sectionId + "]");
+      if (nav) {
+        nav.classList.remove("active");
+      }
     }
   });
 }
