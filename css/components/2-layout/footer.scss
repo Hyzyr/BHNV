@@ -298,6 +298,8 @@
   .footer {
     &__inner {
       &-info {
+        flex-direction: column;
+        gap: 1em;
         .logo {
           font-size: 14px;
         }

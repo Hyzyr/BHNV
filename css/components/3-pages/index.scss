@@ -49,6 +49,14 @@
     p {
       font-weight: 500;
     }
+    &-license {
+      color: $white;
+      font-family: $font-secondary;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 130%;
+    }
     &-buttons {
       .button {
         min-width: 50px;
@@ -807,6 +815,9 @@
       .logo {
         font-size: 40px;
       }
+      &-license {
+        font-size: 26px;
+      }
     }
   }
   .about {
@@ -1021,7 +1032,9 @@
     &__inner {
       justify-content: center;
       min-height: calc(65vh - 190px);
-
+      &-license {
+        font-size: 22px;
+      }
       .logo {
         font-size: 36px;
       }
@@ -1108,6 +1121,9 @@
     &__inner {
       width: 100%;
       max-width: 540px;
+      &-license {
+        font-size: 20px;
+      }
     }
   }
   /// section constriction
@@ -1179,6 +1195,9 @@
     &__inner {
       min-height: calc(85vh - 150px);
       justify-content: center;
+      &-license {
+        font-size: 18px;
+      }
       .logo {
         font-size: 32px;
       }
@@ -1253,8 +1272,13 @@
   .hero {
     margin-bottom: 0;
     &__inner {
+      gap: 15px;
       .logo {
         font-size: 22px;
+      }
+      &-license {
+        font-size: 16px;
+        margin-bottom: 0.6em;
       }
       h1 {
         font-size: 32px;
