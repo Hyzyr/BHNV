@@ -276,6 +276,7 @@
       }
     }
     &-text {
+      width: calc(100% - 450px);
       max-width: 750px;
     }
     &-list {
@@ -348,6 +349,29 @@
         margin-bottom: 5px;
         z-index: 1;
         font-size: 10px;
+      }
+    }
+    &-image {
+      width: calc(100% - 450px);
+      height: 404px;
+      margin-top: 80px;
+      .ratioImage {
+        height: 100%;
+        background: $gray;
+        padding-bottom: unset;
+        transition: 0.25s ease-out;
+      }
+    }
+    .swiper{
+      &-slide{
+        opacity: 0 !important;
+        pointer-events: none;
+        max-height: 0;
+        &-active{
+          opacity: 1 !important;
+          pointer-events: all;
+          max-height: 1200px;
+        }
       }
     }
   }
@@ -747,6 +771,13 @@
       gap: 25px;
     }
   }
+  .electrical{
+    &__inner{
+      &-image{
+        margin-top: 60px;
+      }
+    }
+  }
 }
 @mixin index-1280 {
   .about {
@@ -806,6 +837,12 @@
           right: 45px;
         }
       }
+      &-text{
+        width: calc(100% - 400px);
+      }
+      &-image{
+        width: calc(100% - 400px);
+      }
     }
   }
 }
@@ -860,10 +897,10 @@
       }
     }
   }
-  /// section electrical
   .electrical {
     &__inner {
       &-row {
+        padding-bottom: 70px !important;
         &-wrapper {
           width: 100%;
           max-width: unset;
@@ -898,6 +935,22 @@
           right: unset;
           left: 50%;
           transform: translateX(-50%);
+          width: unset;
+        }
+      }
+      &-image{
+        width: 100%;
+        margin-top: 0;
+        height: auto;
+        .ratioImage{
+          padding-bottom: 40%;
+        }
+      }
+      .swiper{
+        &-slide{
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
         }
       }
     }
@@ -1156,6 +1209,17 @@
           .swiper-dots {
             transform: translateY(0.25em);
           }
+        }
+      }
+      .swiper{
+        &-slide{
+          gap: 30px;
+        }
+      }
+      &-image{
+        .ratioImage{
+          padding-bottom: 50%;
+
         }
       }
     }

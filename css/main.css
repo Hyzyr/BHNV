@@ -1311,6 +1311,7 @@ li {
   gap: 80px;
 }
 .electrical__inner-text {
+  width: calc(100% - 450px);
   max-width: 750px;
 }
 .electrical__inner-list {
@@ -1392,6 +1393,28 @@ li {
   margin-bottom: 5px;
   z-index: 1;
   font-size: 10px;
+}
+.electrical__inner-image {
+  width: calc(100% - 450px);
+  height: 404px;
+  margin-top: 80px;
+}
+.electrical__inner-image .ratioImage {
+  height: 100%;
+  background: #d9d9d9;
+  padding-bottom: unset;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+.electrical__inner .swiper-slide {
+  opacity: 0 !important;
+  pointer-events: none;
+  max-height: 0;
+}
+.electrical__inner .swiper-slide-active {
+  opacity: 1 !important;
+  pointer-events: all;
+  max-height: 1200px;
 }
 .electrical .autoContainer {
   max-width: 1520px;
@@ -1843,6 +1866,10 @@ li {
     min-height: calc(95vh - 270px);
     gap: 25px;
   }
+
+  .electrical__inner-image {
+    margin-top: 60px;
+  }
 }
 @media (max-width: 1280px) {
   .anchor {
@@ -1925,6 +1952,12 @@ li {
   .electrical__inner-slider-arrows {
     right: 45px;
   }
+  .electrical__inner-text {
+    width: calc(100% - 400px);
+  }
+  .electrical__inner-image {
+    width: calc(100% - 400px);
+  }
 }
 @media (max-width: 1160px) {
   .autoContainer {
@@ -1992,6 +2025,9 @@ li {
     width: 100%;
   }
 
+  .electrical__inner-row {
+    padding-bottom: 70px !important;
+  }
   .electrical__inner-row-wrapper {
     width: 100%;
     max-width: unset;
@@ -2031,6 +2067,25 @@ li {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    width: unset;
+  }
+  .electrical__inner-image {
+    width: 100%;
+    margin-top: 0;
+    height: auto;
+  }
+  .electrical__inner-image .ratioImage {
+    padding-bottom: 40%;
+  }
+  .electrical__inner .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
   }
 
   .charger__inner-body-banner {
@@ -2536,6 +2591,12 @@ li {
   .electrical__inner-slider-arrows .swiper-dots {
     -webkit-transform: translateY(0.25em);
             transform: translateY(0.25em);
+  }
+  .electrical__inner .swiper-slide {
+    gap: 30px;
+  }
+  .electrical__inner-image .ratioImage {
+    padding-bottom: 50%;
   }
 
   .feedbacks__item {

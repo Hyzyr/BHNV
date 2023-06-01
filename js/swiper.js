@@ -25,6 +25,7 @@ const swiperSettings = {
     },
   },
   electrical: {
+    effect: 'fade',
     loop: false,
     slidesPerView: 1,
     spaceBetween: 3,
