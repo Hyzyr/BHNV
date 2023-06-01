@@ -12,14 +12,13 @@
   display: flex;
   width: 100%;
   font-size: 18px;
-
   input,
   textarea {
     padding: 1.2em 1.9em;
     border-radius: 2em;
     width: 100%;
     background-color: $white;
-    border: 2px solid $white;
+    border: 1px solid $white;
     resize: none;
     transition: 0.3s ease-out;
 
@@ -56,6 +55,41 @@
       background: transparent;
       &::placeholder {
         color: $white;
+      }
+    }
+  }
+  &--text {
+    input {
+      background: unset;
+      border-radius: unset;
+      color: $white !important;
+      padding: 1em 1.5em;
+      border-color: $gray-2;
+      &:focus{
+        border-color: $white;
+        &::placeholder{
+          color: $white;
+        }
+      }
+      &::placeholder {
+        color: $gray-2;
+      }
+    }
+    textarea {
+      border-color: $gray-2;
+      background: unset;
+      border-radius: unset;
+      color: $white;
+      padding: 1em 1.5em;
+      min-height: 100px;
+      &::placeholder {
+        color: $gray-2;
+      }
+      &:focus{
+        border-color: $white;
+        &::placeholder{
+          color: $white;
+        }
       }
     }
   }

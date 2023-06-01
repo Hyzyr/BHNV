@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     gap: 30px;
     color: $white;
     max-width: 700px;
@@ -51,7 +52,7 @@
     }
     &-license {
       color: $white;
-      font-family: $font-secondary;
+      font-family: $font-lato;
       font-style: normal;
       font-weight: 300;
       font-size: 30px;
@@ -268,7 +269,6 @@
       justify-content: space-between;
       position: relative;
       &-wrapper {
-        max-width: 940px;
         width: calc(100% - 430px);
         display: flex;
         flex-direction: column;
