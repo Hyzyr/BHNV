@@ -362,12 +362,13 @@
         transition: 0.25s ease-out;
       }
     }
-    .swiper{
-      &-slide{
+    .swiper {
+      &-slide {
         opacity: 0 !important;
         pointer-events: none;
         max-height: 0;
-        &-active{
+        @include transition;
+        &-active {
           opacity: 1 !important;
           pointer-events: all;
           max-height: 1200px;
@@ -771,9 +772,9 @@
       gap: 25px;
     }
   }
-  .electrical{
-    &__inner{
-      &-image{
+  .electrical {
+    &__inner {
+      &-image {
         margin-top: 60px;
       }
     }
@@ -837,10 +838,10 @@
           right: 45px;
         }
       }
-      &-text{
+      &-text {
         width: calc(100% - 400px);
       }
-      &-image{
+      &-image {
         width: calc(100% - 400px);
       }
     }
@@ -938,16 +939,16 @@
           width: unset;
         }
       }
-      &-image{
+      &-image {
         width: 100%;
         margin-top: 0;
         height: auto;
-        .ratioImage{
+        .ratioImage {
           padding-bottom: 40%;
         }
       }
-      .swiper{
-        &-slide{
+      .swiper {
+        &-slide {
           display: flex;
           flex-direction: column;
           gap: 50px;
@@ -1211,15 +1212,14 @@
           }
         }
       }
-      .swiper{
-        &-slide{
+      .swiper {
+        &-slide {
           gap: 30px;
         }
       }
-      &-image{
-        .ratioImage{
+      &-image {
+        .ratioImage {
           padding-bottom: 50%;
-
         }
       }
     }
