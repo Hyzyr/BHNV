@@ -621,6 +621,13 @@
         }
       }
     }
+    &-slider2 {
+      .swiper:not(.swiper-initialized) {
+        height: 400px;
+        visibility: hidden;
+        overflow: hidden;
+      }
+    }
     &-arrows {
       display: flex;
       justify-content: center;
@@ -1243,6 +1250,12 @@
   }
   .projects {
     &__inner {
+      &-tabs {
+        gap: 15px;
+      }
+      &-tab {
+        font-size: 16px;
+      }
       &-arrows {
         font-size: 8px !important;
         margin-top: 25px;
@@ -1286,12 +1299,16 @@
   }
   .projects {
     &__inner {
+      h3 {
+        margin-bottom: 20px;
+      }
       &-tabs {
-        gap: 10px;
+        flex-direction: column;
+        gap: 5px;
         justify-content: space-evenly;
       }
       &-tab {
-        font-size: 16px;
+        padding: 0.2em;
       }
     }
   }

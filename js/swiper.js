@@ -2,30 +2,33 @@ const swiperSettings = {
   construction: {
     loop: false,
     slidesPerView: 1.2,
-    // slidesPerGroup: 2,
     // slidesPerGroupSkip: 2,
     spaceBetween: 5,
     breakpoints: {
       460: {
         slidesPerView: 2,
         spaceBetween: 0,
+        slidesPerGroup: 2,
       },
       768: {
         slidesPerView: 2.5,
         spaceBetween: 10,
+        slidesPerGroup: 2,
       },
       840: {
         slidesPerView: 3,
         spaceBetween: 10,
+        slidesPerGroup: 2,
       },
       1160: {
         slidesPerView: 2,
         spaceBetween: 10,
+        slidesPerGroup: 2,
       },
     },
   },
   electrical: {
-    effect: 'fade',
+    effect: "fade",
     loop: false,
     slidesPerView: 1,
     spaceBetween: 3,
@@ -108,8 +111,38 @@ const swiperSettings = {
       },
     },
   },
+  projects1row: {
+    slidesPerView: 1.2,
+    // loop: true,
+    spaceBetween: 10,
+    breakpoints: {
+      480: {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
+      940: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1025: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  },
 };
-
 const initSwiper = (swiperSlider) => {
   const settingsKey = swiperSlider.getAttribute("data-swiper");
   const parentElement = swiperSlider.hasAttribute("data-swiper-parent")
