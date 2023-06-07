@@ -285,6 +285,7 @@
       right: 0;
       display: flex;
       flex-direction: column;
+      width: 400px;
       gap: 20px;
       li {
         position: relative;
@@ -831,6 +832,8 @@
       }
       &-list {
         gap: 18px;
+        width: 360px;
+
         li {
           font-size: 18px;
         }
