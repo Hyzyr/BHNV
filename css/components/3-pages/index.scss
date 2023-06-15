@@ -38,7 +38,7 @@
     gap: 30px;
     color: $white;
     max-width: 700px;
-    min-height: calc(95vh - 360px);
+    min-height: calc(100vh - 360px);
     width: 63%;
 
     .logo {
@@ -776,7 +776,7 @@
   .hero {
     padding: 170px 0 100px 0;
     &__inner {
-      min-height: calc(95vh - 270px);
+      min-height: calc(100vh - 270px);
       gap: 25px;
     }
   }
@@ -1010,7 +1010,8 @@
   .hero {
     padding: 100px 0 120px 0;
     &__inner {
-      min-height: calc(95vh - 220px);
+      min-height: calc(90vh - 220px);
+      min-height: calc(100dvh - 220px);
     }
   }
   .about {
@@ -1095,7 +1096,8 @@
     padding: 90px 0 100px 0;
     &__inner {
       justify-content: center;
-      min-height: calc(65vh - 190px);
+      min-height: calc(90vh - 190px);
+      min-height: calc(100dvh - 190px);
       &-license {
         font-size: 22px;
       }
@@ -1273,7 +1275,8 @@
   .hero {
     padding: 90px 0 60px 0;
     &__inner {
-      min-height: calc(85vh - 150px);
+      min-height: calc(90vh - 150px);
+      min-height: calc(100dvh - 150px);
       justify-content: center;
       &-license {
         font-size: 18px;
